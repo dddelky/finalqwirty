@@ -1,0 +1,108 @@
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: "Open Sans";
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 100%
+
+}
+
+.item {
+    flex-basis: 50px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 12px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    box-shadow: 0 2px 5px -2px black;
+    max-width: 500px;
+    max-height: 500px;
+    font-family: "Open Sans";
+    flex: 0 1 10px;
+    margin-right: 15px;
+    box-shadow: 0 2px 5px -2px black;
+    padding: 7px;
+    padding-top: 10px;
+}
+
+.item-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: pink;
+    font-family: "Open Sans";
+
+}
+
+.fact-line {
+    background-color: pink;
+    margin-top: 12px;
+    font-family: "Open Sans";
+}
+
+.add-item {
+    padding: 12px;
+    background-color: darksalmon;
+    color: white;
+    border-radius: 100%;
+}
+
+.item-description {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-family: "Open Sans";
+    
+
+}
+
+@media screen and (min-width: 320px) (max-width: 480px) {
+    #item { font-size: larger;
+            flex-basis: 100%;
+            column-count: 1;
+    }
+
+    #items { display: flex;
+    flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 481px) (max-width: 768px) {
+    #item { font-size: larger;
+            flex-basis: 100%;
+            column-count: 2;
+    }
+
+    #items { display: flex;
+    flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #item { font-size: larger;
+            flex-basis: 100%;
+            column-count: 4;
+    }
+
+    #items { display: flex;
+    flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #item { font-size: larger;
+            flex-basis: 100%;
+            column-count: 5;
+    }
+
+    #items { display: flex;
+    flex-direction: column;
+    }
+}
